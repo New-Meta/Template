@@ -55,8 +55,8 @@ public:
         return false;
     }
 
-	// approximate estimate the p[i].d
-	// Do not care about first mink color class (For better result, we must get some vertex in some color class larger than mink )
+	// approximately estimate the p[i].d
+	// Do not care about first mink color classes (For better result, we must get some vertices in some color classes larger than mink )
     void color_sort(vector<Vertex> &cur) {
         int totc = 0, ptr = 0, mink = max((int)result.size() - (int)cur_res.size(), 0);
         for (int i = 0; i < cur.size(); i++) {
